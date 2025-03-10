@@ -3,7 +3,6 @@
 import React from "react";
 import cl from "./Products.module.scss";
 import Image from "next/image";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 const Products = () => {
   // const { push, replace } = useRouter();
@@ -12,7 +11,7 @@ const Products = () => {
   // replace("/products/2");
 
   // const path = usePathname();
-  const params = useSearchParams();
+  // const params = useSearchParams();
 
   return (
     <div className={cl.products}>

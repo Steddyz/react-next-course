@@ -1,6 +1,21 @@
 import React from "react";
 import Products from "./Products";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Products",
+};
+
+// динамическая СЕО
+// export async function generateMetadata({
+//   params,
+// }: {
+//   params: { slug };
+// }): Promise<Metadata> {
+//   const product = await getData(slug);
+//   return { title: product.title };
+// }
 
 const fetchData = async () => {
   const response = await fetch("https://api.example.com/products", {
