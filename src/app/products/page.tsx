@@ -3,6 +3,7 @@ import Products from "./Products";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 
+// Статическая СЕО
 export const metadata: Metadata = {
   title: "Products",
 };
